@@ -191,7 +191,7 @@ function join_instructions(user_id){
 	if (visited_users.indexOf(user_id) == -1){
 		// for newcomers
 		visited_users.push(user_id);
-		var input_message = "Hey " + username + ", welcome to our room!  Please check our room info, or type -help";
+		var input_message = "Hey " + username + ", welcome to our room!  Please check our room info, or type -help" + "Also, please help us stop SOPA/PIPA. More information here: http://www.google.com/landing/takeaction/";
 		deliver_chat(input_message);
 	}
 }
@@ -429,7 +429,7 @@ function alert_next_dj(){
 				my_queue.shift();
 			}
 			var username = get_user_name(my_queue[0], false);
-			var input_message = username + ", we have a spot reserved for you, please step up!  You have 90 seconds left.";
+			var input_message = "@" + username + ", we have a spot reserved for you, please step up!  You have 90 seconds left.";
 			stop_countdown();
 			countdown_interval_id = setInterval("countdown()", 15000);
 		}
