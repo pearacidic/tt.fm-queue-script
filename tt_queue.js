@@ -191,7 +191,7 @@ function join_instructions(user_id){
 	if (visited_users.indexOf(user_id) == -1){
 		// for newcomers
 		visited_users.push(user_id);
-		var input_message = "Hey " + username + ", welcome to our room!  Please check our room info, or type -help. " + "Also, please help us stop SOPA/PIPA. More information here: http://www.google.com/landing/takeaction/";
+		var input_message = "Hey " + username + ", welcome to our room!  Please check our room info, or type -help.";
 		deliver_chat(input_message);
 	}
 }
